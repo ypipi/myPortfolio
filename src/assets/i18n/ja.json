@@ -1,0 +1,42 @@
+{
+  "NAV_ABOUT": "自己紹介",
+  "NAV_WORK": "スキル",
+  "NAV_CONTACT": "お問い合わせ",
+  "HOME":{
+      "NAME":"今津　由貴子",
+      "TITLE":"Software Develper",
+      "DESCRIPTION":"現在カナダのトロントを拠点にソフトウェア開発をしています。主にフロントエンドに携わっています。",
+      "BUTTON":"自己紹介ページへ"
+  },
+  "WORK":{
+      "TITLE":"スキル",
+      "DESCRIPTION":"このサイトはAngular, Node.js, d3.js.を使用しています。",
+      "FE":"フロントエンド",
+      "SERVER":"バックエンド",
+      "DB":"データベース",
+      "OTHERS":"その他"
+  },
+  "ABOUT":{
+      "TITLE":"自己紹介",
+      "DESCRIPTION1":"約14年以上ASP.net, C#, Visual basic, PL/SQL, T-SQL, SQL, Node.js, Javascript, Angular, HTML, CSSなどを使用し日本、カナダで開発業務に携わっています。",
+      "DESCRIPTION2":"様々な企業様向けびウェブアプリケーション、バッチ、e-commerceなど作成致しました。",
+      "DESCRIPTION3":" UI/UXデザインに興味があり現在は Angular, JS framework, HTML,and CSSを使用しデータビジュアライゼーション・フロントエンドにフォーカスしながらシステム開発を行なっております。"
+  },
+  "CONTACT": {
+    "HEADER": "お問い合わせ",
+    "DESCRIPTION1": "お仕事のご依頼、ご相談などお気軽に",
+    "DESCRIPTION2": "下記のフォームよりお問い合わせ下さい。",
+    "NAME": "名前",
+    "SUBJECT": "件名",
+    "EMAIL": "メールアドレス",
+    "MESSAGE": "メッセージ",
+    "BUTTON": "送信",
+    "REQUIRED":"必須です",
+    "ERROR_NAME":"名前は",
+    "ERROR_EMAIL":"メールアドレスは",
+    "ERROR_EMAIL_INVALID":"メールアドレスが正しい形式ではありません",
+    "ERROR_MESSAGE":"メッセージは",
+    "SUCCESS_MSG":"お問い合わせありがとうございました。",
+    "SUCCESS_MSG2":"数日中にご返信させて頂きます。"
+  }
+}

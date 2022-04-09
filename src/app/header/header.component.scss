@@ -1,0 +1,29 @@
+.navbar {
+  padding: 1em;
+
+  .navbar-collapse {
+    justify-content: end;
+  }
+
+  li {
+    padding-right: 2em;
+
+    button {
+      padding: 0;
+      .globIcon {
+        color: rgba(255, 255, 255, 0.55);
+      }
+      span {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 16px;
+      }
+    }
+    hr{
+      color: rgba(255, 255, 255, 0.55);
+    }
+  }
+
+}
+
+@media screen and (min-width: 30em) {
+}

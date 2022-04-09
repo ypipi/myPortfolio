@@ -1,0 +1,86 @@
+.container-fluid {
+  // background-color: rgb(33, 37, 41);
+  // color:rgba(255, 255, 255, 0.55);
+
+  background-color: rgb(33, 37, 41);
+  color: rgba(255, 255, 255, 0.55);
+  padding: 2em;
+  //min-height: calc(100vh - 73px);
+  min-height: 100vh;
+  .content {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .content__header {
+      margin: 3em auto 0.5em;
+      h1:after {
+        background: none repeat scroll 0 0 #0becdd;
+        content: "";
+        display: block;
+        height: 3px;
+        position: relative;
+        width: 1.5em;
+      }
+    }
+    .content__description {
+      .content__description__sub {
+        text-align: center;
+        margin: 1em auto 3em;
+      }
+    }
+
+    .content__tile {
+      margin: 0.5em;
+      width: 250px;
+      height: 250px;
+      background-color: #434343;
+      box-shadow: 3px 2px 5px #626262;
+      padding: 0.7em;
+      .content__tile-title {
+        font-size: 20px;
+      }
+      div {
+        color: #0becdd;
+        padding: 0.5rem;
+        text-align: center;
+        min-width: 90%;
+      }
+      p {
+        font-size: 15px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.subSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  justify-content: center;
+}
+.bChart {
+  margin-top: 2em;
+  height: 300px;
+}
+
+@media only screen and (min-width: 1220px) {
+  .subSection {
+    flex-direction: row;
+  }
+  .bChart {
+    margin: 2em 2em 2em 4em;
+    width: 530px;
+    height: 500px;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+}

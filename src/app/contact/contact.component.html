@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <section class="content">
+    <div class="content__header">
+      <h1>{{ "CONTACT.HEADER" | translate }}</h1>
+    </div>
+    <div class="content__subHeader">
+      <p>
+        {{ "CONTACT.DESCRIPTION1" | translate }} <br />{{
+          "CONTACT.DESCRIPTION2" | translate
+        }}
+      </p>
+    </div>
+    <form
+      [formGroup]="contactForm"
+      class="content__form"
+      (ngSubmit)="onSubmit()"
+    >
+      <!-- name -->
+
+      <mat-form-field class="form-full-width" appearance="fill">
+        <mat-label>{{ "CONTACT.NAME" | translate }}* </mat-label>
+        <input type="text" matInput formControlName="name" />
+
+        <mat-error *ngIf="contactForm.controls['email'].hasError('required')">
+          {{ "CONTACT.ERROR_NAME" | translate
+          }}{{ "CONTACT.REQUIRED" | translate }}
+        </mat-error>
+      </mat-form-field>
+
+      <!-- subject -->
+      <mat-form-field class="form-full-width" appearance="fill">
+        <mat-label>{{ "CONTACT.SUBJECT" | translate }} </mat-label>
+        <input type="text" matInput formControlName="subject" />
+      </mat-form-field>
+
+      <!-- email -->
+      <mat-form-field class="form-full-width" appearance="fill">
+        <mat-label>{{ "CONTACT.EMAIL" | translate }}* </mat-label>
+        <input type="email" matInput formControlName="email" />
+        <mat-error
+          *ngIf="
+            contactForm.controls['email'].hasError('email') &&
+            !contactForm.controls['email'].hasError('required')
+          "
+        >
+          {{ "CONTACT.ERROR_EMAIL_INVALID" | translate }}
+        </mat-error>
+        <mat-error *ngIf="contactForm.controls['email'].hasError('required')">
+          {{ "CONTACT.ERROR_EMAIL" | translate
+          }}{{ "CONTACT.REQUIRED" | translate }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="form-full-width" appearance="fill">
+        <mat-label>{{ "CONTACT.MESSAGE" | translate }}*</mat-label>
+        <textarea matInput formControlName="message"></textarea>
+        <mat-error *ngIf="contactForm.controls['message'].hasError('required')">
+          {{ "CONTACT.ERROR_MESSAGE" | translate
+          }}{{ "CONTACT.REQUIRED" | translate }}
+        </mat-error>
+      </mat-form-field>
+
+      <div class="alert alert-success" role="alert" *ngIf="success">
+        {{ "CONTACT.SUCCESS_MSG" | translate }}<br/>
+        {{ "CONTACT.SUCCESS_MSG2" | translate }}
+      </div>
+      <div *ngIf="process" class="loader">
+        <fa-icon  [icon]="faSpinner" size="2x" class="spinner " [pulse]="true"></fa-icon>
+      </div>
+      <br />
+      <div class="content__submit">
+        <button
+          mat-flat-button
+          type="submit"
+          [disabled]="!contactForm.valid || success || process"
+        >
+          {{ "CONTACT.BUTTON" | translate }}
+        </button>
+      </div>
+    </form>
+  </section>
+</div>

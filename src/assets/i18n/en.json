@@ -1,0 +1,42 @@
+{
+    "NAV_ABOUT": "ABOUT",
+    "NAV_WORK": "WORK",
+    "NAV_CONTACT": "CONTACT",
+    "HOME":{
+        "NAME":"YUKIKO IMAZU",
+        "TITLE":"Software Develper",
+        "DESCRIPTION":"I'm a software developer based in Toronto, Canada, currently working as a web developer. I mostly focus on the front-end of the web.",
+        "BUTTON":"GO TO ABOUT"
+    },
+    "WORK":{
+        "TITLE":"WORK",
+        "DESCRIPTION":"This site is made by Angular, Node.js, and d3.js.",
+        "FE":"FRONT END",
+        "SERVER":"BACK END",
+        "DB":"DATABASE",
+        "OTHERS":"OTHERS"
+    },
+    "ABOUT":{
+        "TITLE":"ABOUT",
+        "DESCRIPTION1":"I'm a full stack developer with over 14 years of experience Angular, Node.js, Javascript, ASP.net, C#, Visual basic, PL/SQL, T-SQL, SQL, HTML, and CSS.",
+        "DESCRIPTION2":"I developed web application, batch and e-commerce solution for diverse industry clients.",
+        "DESCRIPTION3":"I have passion about UI UX design and currently focus on front-end development and data visualization using Angular, JS framework, HTML, and CSS."
+    },
+    "CONTACT": {
+        "HEADER":"Get in touch",
+        "DESCRIPTION1": "Have a question or want to work together?",
+        "DESCRIPTION2": "Please submit the form below.",
+        "NAME": "Name",
+        "SUBJECT": "Subject",
+        "EMAIL": "Email",
+        "MESSAGE": "Message",
+        "BUTTON": "SUBMIT",
+        "REQUIRED":"required",
+        "ERROR_NAME":"Name is ",
+        "ERROR_EMAIL":"Email is ",
+        "ERROR_EMAIL_INVALID":"Please enter a valid email address",
+        "ERROR_MESSAGE":"Message is ",
+        "SUCCESS_MSG":"Thank you for getting in touch!",
+        "SUCCESS_MSG2":"I will get back in touch with you soon."
+    }
+}

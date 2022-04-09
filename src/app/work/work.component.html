@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <section class="content">
+    <div class="content__header">
+      <h1>{{ "WORK.TITLE" | translate }}</h1>
+    </div>
+    <div class="content__description">
+      <p class="content__description__sub">
+        {{ "WORK.DESCRIPTION" | translate }}
+      </p>
+    </div>
+
+    <div class="subSection">
+      <div class="tiles">
+        <div class="row">
+          <div class="content__tile col-sm">
+            <div class="content__tile-title">{{ "WORK.FE" | translate }}</div>
+            <div><fa-icon [icon]="faDesktop" size="3x"></fa-icon></div>
+            <div class="content__tile-desc">
+              <p>HTML</p>
+              <p>CSS / SCSS</p>
+              <p>JavaScript / jQuery</p>
+              <p>TypeScript</p>
+            </div>
+          </div>
+          <div class="content__tile col-sm">
+            <div class="content__tile-title">{{ "WORK.SERVER" | translate }}</div>
+            <div><fa-icon [icon]="faServer" size="3x"></fa-icon></div>
+            <div class="content__tile-desc">
+              <p>Node.js</p>
+              <p>C#.Net</p>
+              <p>VB.Net</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="content__tile col-sm">
+            <div class="content__tile-title">{{ "WORK.DB" | translate }}</div>
+            <div><fa-icon [icon]="faDatabase" size="3x"></fa-icon></div>
+            <div class="content__tile-desc">
+              <p>Oracle</p>
+              <p>SQL Server</p>
+              <p>PL/SQL</p>
+              <p>T-SQL</p>
+            </div>
+          </div>
+          <div class="content__tile col-sm">
+            <div class="content__tile-title">{{ "WORK.OTHERS" | translate }}</div>
+            <div><fa-icon [icon]="faChartPie" size="3x"></fa-icon></div>
+            <div class="content__tile-desc">
+              <p>d3.js</p>
+              <p>Angular</p>
+              <p>Bootstrap</p>
+              <p>GraphQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skillChart">
+        <svg width="900" height="500"></svg>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,57 @@
+.container-fluid {
+  // background-color: rgb(33, 37, 41);
+  // color:rgba(255, 255, 255, 0.55);
+  background-color: #ffffff;
+  color: rgb(33, 37, 41);
+  padding: 2em;
+  min-height: calc(100vh - 73px);
+  .content {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    .content__header {
+      margin: 4em auto 1em;
+    }
+    .content__subHeader {
+      margin: 0 auto 1em;
+    }
+
+    .content__form {
+      margin: 0 auto;
+      max-width: 450px;
+      .form-full-width {
+        width: 100%;
+        margin: 0 auto 1.2em;
+      }
+    }
+
+    .content__submit {
+      margin: 0 auto;
+      width: max-content;
+
+      button {
+        background-color: black;
+        color: white;
+        min-width: 150px;
+        &[disabled] {
+          opacity: 0.6;
+        }
+        &:hover {
+          &:not([disabled]) {
+            background-color: lighten(black, 50);
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  .spinner {
+    color: darkgray;
+  }
+}
